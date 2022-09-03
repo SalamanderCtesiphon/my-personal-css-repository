@@ -4,37 +4,26 @@
   display: flex;
 }
 
-div {
-  flex: 1; 
-  display: flex; 
-}
-
-div.left-links div.right-links {
+div{
+  flex: 10;
   display: flex;
-}
-
-div.left-links {
-  justify-content: left;
 }
 
 .logo {
   font-size: 48px;
   font-weight: 900;
+  margin: 8px;
   color: tomato;
   background: white;
-  padding: 4px 32px;
-  justify-content: center;
-  align-items: center;
+  padding: 4px 28px;
+  flex: 1;
  }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
-  flex: 1;
   display: flex;
   gap: 8px;
-  align-items: center;
-
 }
 
 a {
@@ -43,9 +32,16 @@ a {
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
-  flex-direction: row;
-  
 }
 
+div.left-links {
+  justify-content: flex-start;
+  align-items: center;
+}
 
+div.right-links {
+  justify-content: flex-end;
+  align-items: center;
+  }
 
+}
